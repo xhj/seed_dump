@@ -22,6 +22,58 @@ class SeedDump
       # with the composite_primary_keys gem (it returns composite
       # primary key attribute names as hashes).
       record.attributes.select {|key| key.is_a?(String) || key.is_a?(Symbol) }.each do |attribute, value|
+        if value.present?
+          if attribute.to_s == 'id'
+            case record.class.name
+            when 'Survey'
+              value -= 20
+            when 'Widget'
+              value -= 263
+            when 'Group'
+              value -= 28
+            when 'Question'
+              value -= 235
+            when 'Option'
+              value -= 537
+            when 'Row'
+              value -= 104
+            when 'Header'
+              value -= 49
+            when 'HeaderOption'
+              value -= 18
+            when 'Rule'
+              value -= 23
+            when 'Utility'
+              value -= 9
+            when 'OptionRule'
+              value -= 25
+            end
+          end
+          case attribute.to_s
+          when 'survey_id'
+            value -= 20
+          when 'widget_id', 'parent_widget_id'
+            widget = Widget.find(value)
+            num = widget.widgetable_id > 200 ? 235 : 28
+            value = "#{widget.widgetable_type}.find(#{widget.widgetable_id-num}).widget.id"
+          when 'group_id', 'utilizable_id'
+            value -= 28
+          when 'question_id'
+            value -= 235
+          when 'widgetable_id'
+            value -= (value > 200 ? 235 : 28)
+          when 'option_id'
+            value -= 537
+          when 'row_id'
+            value -= 104
+          when 'header_id'
+            value -= 49
+          when 'rule_id'
+            value -= 23
+          when 'utility_id'
+            value -= 9
+          end
+        end
         attribute_strings << dump_attribute_new(attribute, value, options) unless options[:exclude].include?(attribute.to_sym)
       end
 

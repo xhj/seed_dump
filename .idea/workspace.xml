@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15dd323b-44ef-45c5-8c25-119833f39e6f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/seed_dump/dump_methods.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/seed_dump/dump_methods.rb" afterDir="false" />
-    </list>
+    <list default="true" id="15dd323b-44ef-45c5-8c25-119833f39e6f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +34,7 @@
       <workItem from="1603962121146" duration="2587000" />
       <workItem from="1604044174598" duration="490000" />
       <workItem from="1604044736047" duration="2318000" />
+      <workItem from="1604307429526" duration="339000" />
     </task>
     <servers />
   </component>

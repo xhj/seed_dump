@@ -70,8 +70,17 @@ class SeedDump
             value -= 49
           when 'rule_id'
             value -= 23
+          when 'scaleable_id'
+            value -= 20 if record.scaleable_type == 'Survey'
+            value -= 28 if record.scaleable_type == 'Group'
+          when 'node_id'
+            value = record.widget.id
           when 'utility_id'
             value -= 9
+          end
+        else
+          if attribute.to_s == 'node_id'
+            value = record.widget.id - 263
           end
         end
         attribute_strings << dump_attribute_new(attribute, value, options) unless options[:exclude].include?(attribute.to_sym)

@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15dd323b-44ef-45c5-8c25-119833f39e6f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.rakeTasks" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/seed_dump.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/seed_dump/dump_methods.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/seed_dump/dump_methods.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +34,9 @@
       <updated>1603957257031</updated>
       <workItem from="1603957258055" duration="168000" />
       <workItem from="1603959983384" duration="1967000" />
-      <workItem from="1603962121146" duration="1909000" />
+      <workItem from="1603962121146" duration="2587000" />
+      <workItem from="1604044174598" duration="490000" />
+      <workItem from="1604044736047" duration="2318000" />
     </task>
     <servers />
   </component>
